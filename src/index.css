@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap');
+
+@layer base {
+  body {
+    @apply bg-[#090909] text-[#F1EBDD] font-sans antialiased overflow-hidden m-0 h-full;
+  }
+  html {
+    @apply m-0 h-full;
+  }
+  #root {
+    @apply h-full;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+}
